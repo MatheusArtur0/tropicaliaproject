@@ -1,5 +1,5 @@
 ---
-description: Code model to have initial example for the project (carroussel bar)
+description: Code model to have initial example for the project (carousel bar)
 ---
 
 # Code model - galeria carrossel
