@@ -1,0 +1,12 @@
+{
+  "name": "tropicaliaproject",
+  "version": "1.0.0",
+  "description": "---\r description: >-\r   Esse projeto está sendo criado com o foco de acessibilidade e CX. Neste\r   repositório, serão abordadas e compartilhadas as decisões técnicas para chegar\r   ao nosso resultado desejado.\r layout:\r   title:\r     visible: true\r   description:\r     visible: true\r   tableOfContents:\r     visible: true\r   outline:\r     visible: true\r   pagination:\r     visible: true\r ---",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
