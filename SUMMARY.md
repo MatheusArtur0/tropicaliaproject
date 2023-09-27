@@ -2,3 +2,4 @@
 
 * [💻 Tropicália - projeto de acessibilidade com foco em experiência do cliente](README.md)
 * [Code model - barra inicial](code-model-barra-inicial.md)
+* [Code model - barra secundária](code-model-barra-secundaria.md)
