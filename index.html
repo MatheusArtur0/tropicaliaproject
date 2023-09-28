@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    hello, world
-</body>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="accessibility bar">
+        <div class="increase-decrease-letter">
+          <button class="btn-increase">A +</button>
+          <button class="btn-decrease">A -</button>
+        </div>
+        <div class="contrast-modeblack">
+          <button class="btn-contrast"></button>
+          <button class="btn-modeblack"></button>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="logo">
+          <img src="#" alt="" />
+        </div>
+        <div class="bar-search">
+          <input type="text" />
+          <button class="btn-search"></button>
+        </div>
+        <div class="acess-user">
+          <p>Welcome!</p>
+          <h4>Sign in or sign up</h4>
+        </div>
+      </div>
+      <div class="sub-header">
+        <button class="btn-category">Category</button>
+        <button class="sales">Sales</button>
+        <button class="favorite">Favorite</button>
+        <button class="cart">Cart</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="carousel">
+        <div class="container">
+          <div class="slides">
+            <div class="slide">
+              <img src="./source/flor-tropical1.jpg" alt="slide" />
+            </div>
+            <div class="slide">
+              <img src="./source/flor-tropical2.webp" alt="slide" />
+            </div>
+            <div class="slide">
+              <img src="./source/flor-tropical3.jpg" alt="slide" />
+            </div>
+          </div>
+
+          <a class="prev" id="prev" onclick="show_slide(-1)">&#10094;</a>
+          <a class="next" id="next" onclick="show_slide(1)">&#10095;</a>
+
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer></footer>
+    <script src="./scripts/carousel.js"></script>
+  </body>
 </html>
