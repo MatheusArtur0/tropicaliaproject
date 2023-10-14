@@ -8,38 +8,68 @@
   </head>
   <body>
     <header>
-      <div class="accessibility bar">
-        <div class="increase-decrease-letter">
-          <button class="btn-increase">A +</button>
-          <button class="btn-decrease">A -</button>
+      <div class="container">
+        <div class="accessibility-bar">
+          <div class="increase-decrease-letter">
+            <button class="btn-increase">A +</button>
+            <button class="btn-decrease">A -</button>
+          </div>
+          <div class="contrast-modeblack">
+            <button class="btn-contrast">
+              <img
+                src="./source/brightness.png"
+                alt="Button Contrast"
+                srcset=""
+              />
+            </button>
+            <button class="btn-modeblack">
+              <img src="./source/modeblack.png" alt="Button Black/White mode" />
+            </button>
+          </div>
         </div>
-        <div class="contrast-modeblack">
-          <button class="btn-contrast"></button>
-          <button class="btn-modeblack"></button>
+        <div class="main-header">
+          <div class="logo">
+            <a href="index.html"><img src="./source/logo1.png" alt="" /></a>
+          </div>
+          <div class="bar-search">
+            <input type="text" placeholder="Search" />
+            <button class="btn-search">
+              <img src="./source/search.png" alt="" srcset="" />
+            </button>
+          </div>
+          <div class="acess-user">
+            <div class="content-box">
+              <p>Welcome!</p>
+              <img src="./source/down-arrow.png" alt="" />
+            </div>
+            <a href="./login.html"><h4>Sign in or sign up</h4></a>
+          </div>
         </div>
-      </div>
-      <div class="main-header">
-        <div class="logo">
-          <img src="#" alt="" />
+        <div class="sub-header">
+          <div class="btn-category">
+            <button class="">Category</button>
+            <img src="./source/menu.png" alt="Menu Category">
+          </div>
+          <div class="btn-sales">
+            <button class="">Sales</button>
+            <img src="./source/fire.png" alt="Sales" srcset="">
+          </div>
+          <div class="content-box">
+            <div class="btn-favorite">
+              <img src="./source/heart.png" alt="">
+              <button class="">Favorite</button>
+            </div>
+            <div class="btn-cart">
+              <img src="./source/bag.png" alt="">
+              <button class="">Cart</button>
+            </div>
+            
+          </div>
         </div>
-        <div class="bar-search">
-          <input type="text" />
-          <button class="btn-search"></button>
-        </div>
-        <div class="acess-user">
-          <p>Welcome!</p>
-          <h4>Sign in or sign up</h4>
-        </div>
-      </div>
-      <div class="sub-header">
-        <button class="btn-category">Category</button>
-        <button class="sales">Sales</button>
-        <button class="favorite">Favorite</button>
-        <button class="cart">Cart</button>
       </div>
     </header>
 
-    <main>
+    <!-- <main>
       <section class="carousel">
         <div class="container">
           <div class="slides">
@@ -64,8 +94,7 @@
           </div>
         </div>
       </section>
-
-    </main>
+    </main> -->
     <footer></footer>
     <script src="./scripts/carousel.js"></script>
   </body>
