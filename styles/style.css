@@ -1,0 +1,277 @@
+/* Variable */
+:root{
+    --arrow-color: black;
+    --main-color: #D83F31;
+    --secundary-color: #ffda08;
+    --main-font-color: white;
+    --secundary-font-size: 15px;
+}
+
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header{
+    background-color: var(--main-color);
+    padding: 0 20px;
+    position: static;
+}
+
+.accessibility-bar{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.increase-decrease-letter button, .contrast-modeblack button{
+    background: none;
+    border: none;
+    color: var(--main-font-color);
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.main-header{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar-search{
+    display: flex;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 10px;
+}
+
+.bar-search input{
+    height: 35px;
+    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    padding-left: 10px;
+}
+
+.btn-search{
+    height: 35px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    padding: 7px;
+    background-color: var(--secundary-color);
+    cursor: pointer;
+}
+
+.acess-user, .acess-user a{
+    color: white;
+}
+
+.acess-user .content-box{
+    display: flex;
+}
+
+.acess-user .content-box img{
+    margin-left: 7px;
+    color: white;
+}
+
+.sub-header{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-header div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sub-header button{
+    border: none;
+    background: none;
+    color: white;
+    font-size: var(--secundary-font-size);
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.sub-header .btn-favorite, .sub-header .btn-cart{
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+
+
+/* Section Carousel */
+.carousel{
+    padding: 20px 0;
+}
+
+.carousel .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+}
+
+.carousel img{
+    width:  100%;
+    max-width: 800px;
+    height: 400px;
+    padding: 0 5%;
+}
+
+.carousel-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.carousel-btn:focus {
+    outline: none;
+}
+
+.prev{
+    font-weight: bold;
+    color: var(--arrow-color);
+    padding: 15px 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    transition: 0.7;
+}
+
+.next{
+    font-weight: bold;
+    color: var(--arrow-color);
+    padding: 15px 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    transition: 0.7;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+.dot{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: rgba(189, 189, 189, 0.719);
+    border-radius: 100%;
+    margin: 10px 2px;
+}
+
+.active{
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+
+
+
+/* Cards */
+.cards{
+    background-color: var(--main-color);
+}
+
+.cards .container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 350px;
+    height: 400px;
+    background: white;
+    margin: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.card img{
+    width: 250px;
+    height: 180px;
+    margin: 30px 0;
+}
+
+
+/* CONFIG. RESPONSIVO */
+@media screen and (max-width: 780px) {
+    .main-header{
+        flex-direction: column;
+    }
+
+    .bar-search{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .sub-header{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .sub-header div{
+        margin: 10px 0;
+    }
+
+    .sub-header .btn-favorite, .sub-header .btn-cart{
+        margin-left: 0px;
+    }
+
+    .sub-header .btn-favorite{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .prev{
+        font-weight: bold;
+        color: white;
+        padding: 15px 20px;
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        transition: 0.7;
+    }
+    
+    .next{
+        font-weight: bold;
+        color: white;
+        padding: 15px 20px;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        transition: 0.7;
+    }
+}

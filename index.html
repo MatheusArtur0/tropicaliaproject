@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="accessibility-bar">
+          <div class="increase-decrease-letter">
+            <button class="btn-increase">A +</button>
+            <button class="btn-decrease">A -</button>
+          </div>
+          <div class="contrast-modeblack">
+            <button class="btn-contrast">
+              <img
+                src="./source/brightness.png"
+                alt="Button Contrast"
+                srcset=""
+              />
+            </button>
+            <button class="btn-modeblack">
+              <img src="./source/modeblack.png" alt="Button Black/White mode" />
+            </button>
+          </div>
+        </div>
+        <div class="main-header">
+          <div class="logo">
+            <a href="index.html"><img src="./source/logo1.png" alt="" /></a>
+          </div>
+          <div class="bar-search">
+            <input type="text" placeholder="Search" />
+            <button class="btn-search">
+              <img src="./source/search.png" alt="" srcset="" />
+            </button>
+          </div>
+          <div class="acess-user">
+            <div class="content-box">
+              <p>Welcome!</p>
+              <img src="./source/down-arrow.png" alt="" />
+            </div>
+            <a href="./login.html"><h4>Sign in or sign up</h4></a>
+          </div>
+        </div>
+        <div class="sub-header">
+          <div class="btn-category">
+            <button class="">Category</button>
+            <img src="./source/menu.png" alt="Menu Category">
+          </div>
+          <div class="btn-sales">
+            <button class="">Sales</button>
+            <img src="./source/fire.png" alt="Sales" srcset="">
+          </div>
+          <div class="content-box">
+            <div class="btn-favorite">
+              <img src="./source/heart.png" alt="">
+              <button class="">Favorite</button>
+            </div>
+            <div class="btn-cart">
+              <img src="./source/bag.png" alt="">
+              <button class="">Cart</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="carousel">
+        <div class="container">
+          <div class="slides">
+            <div class="slide">
+              <img src="./source/flor-tropical1.jpg" alt="slide" />
+            </div>
+            <div class="slide">
+              <img src="./source/flor-tropical2.webp" alt="slide" />
+            </div>
+            <div class="slide">
+              <img src="./source/flor-tropical3.jpg" alt="slide" />
+            </div>
+          </div>
+
+          <a class="prev" id="prev" onclick="show_slide(-1)">&#10094;</a>
+          <a class="next" id="next" onclick="show_slide(1)">&#10095;</a>
+
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+      <section class="cards">
+        <div class="container">
+          <div class="card">
+            <h2>Lorem ipsum</h2>
+            <img src="./source/flor-tropical1.jpg" alt="">
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+          </div>
+          <div class="card">
+            <h2>Lorem ipsum</h2>
+            <img src="./source/flor-tropical1.jpg" alt="">
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+          </div>
+          <div class="card">
+            <h2>Lorem ipsum</h2>
+            <img src="./source/flor-tropical1.jpg" alt="">
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        a
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./scripts/carousel.js"></script>
+  </body>
+</html>
