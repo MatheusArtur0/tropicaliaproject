@@ -13,10 +13,11 @@
 
     --color-dark-80: #8C8C8C; 
 
-    --color-orange-900: #D83F31;
-    --color-orange-800: #d35549;
-    --color-orange-600: #d58c86;
+    --color-orange-900: #3a4d39;
+    --color-orange-800: #597958;
+    --color-orange-600: #8da08c;
     
+    --main-color: #3a4d39;
     --color-gradient: linear-gradient(90deg, var(--color-orange-600), var(--color-orange-800), var(--color-orange-900));
 }
 
@@ -167,7 +168,7 @@
 }
 
 header {
-    background-color: var(--color-orange-900);
+    background-color: var(--main-color);
     box-shadow: 0px 3px 10px var(--color-dark-900);
 }
 
