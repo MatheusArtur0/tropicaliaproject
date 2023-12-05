@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="accessibility-bar">
+          <div class="increase-decrease-letter">
+            <button class="btn-increase">A +</button>
+            <button class="btn-decrease">A -</button>
+          </div>
+          <div class="contrast-modeblack">
+            <button class="btn-contrast">
+              <img
+                src="./source/brightness.png"
+                alt="Button Contrast"
+                srcset=""
+              />
+            </button>
+            <button class="btn-modeblack">
+              <img src="./source/modeblack.png" alt="Button Black/White mode" />
+            </button>
+          </div>
+        </div>
+        <div class="main-header">
+          <div class="logo">
+            <a href="index.html"><img src="./source/logo1.png" alt="" /></a>
+          </div>
+          <div class="bar-search">
+            <input type="text" placeholder="Search" />
+            <button class="btn-search">
+              <img src="./source/search.png" alt="" srcset="" />
+            </button>
+          </div>
+          <div class="acess-user">
+            <div class="content-box">
+              <p>Bem vindo!</p>
+              <img src="./source/down-arrow.png" alt="" />
+            </div>
+            <a href="./login.html"><h4>Entrar ou cadastrar</h4></a>
+          </div>
+        </div>
+        <div class="sub-header">
+          <div class="btn-category">
+            <button class="">Categorias</button>
+            <img src="./source/menu.png" alt="Menu Category">
+          </div>
+          <div class="btn-sales">
+            <button class="">Vendas</button>
+            <img src="./source/fire.png" alt="Sales" srcset="">
+          </div>
+          <div class="content-box">
+            <div class="btn-favorite">
+              <img src="./source/heart.png" alt="">
+              <button class="">Favoritos</button>
+            </div>
+            <div class="btn-cart">
+              <img src="./source/bag.png" alt="">
+              <button class="">Sacola</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="carousel">
+        <div class="container">
+          <div class="slides">
+            <div class="slide">
+              <img src="./source/flor-tropical1.jpg" alt="slide" />
+            </div>
+            <div class="slide">
+              <img src="./source/flor-tropical2.webp" alt="slide" />
+            </div>
+            <div class="slide">
+              <img src="./source/flor-tropical3.jpg" alt="slide" />
+            </div>
+          </div>
+
+          <a class="prev" id="prev" onclick="show_slide(-1)">&#10094;</a>
+          <a class="next" id="next" onclick="show_slide(1)">&#10095;</a>
+
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+      <section class="cards">
+        <div class="container">
+          <div class="card">
+            <h3>ESTRELÍTZIA</h3>
+            <img src="./source/flor-tropical1.jpg" alt="">
+            <p>é simplesmente um texto fictício da indústria de impressão e composição tipográfica. Lorem Ipsum tem sido o texto fictício padrão da indústria desde 1500, quando um impressor desconhecido pegou.</p>
+          </div>
+          <div class="card">
+            <h3>Lorem ipsum</h3>
+            <img src="./source/flor-tropical1.jpg" alt="">
+            <p>é simplesmente um texto fictício da indústria de impressão e composição tipográfica. Lorem Ipsum tem sido o texto fictício padrão da indústria desde 1500, quando um impressor desconhecido pegou.</p>
+          </div>
+          <div class="card">
+            <h3>Lorem ipsum</h3>
+            <img src="./source/flor-tropical1.jpg" alt="">
+            <p>é simplesmente um texto fictício da indústria de impressão e composição tipográfica. Lorem Ipsum tem sido o texto fictício padrão da indústria desde 1500, quando um impressor desconhecido pegou.</p>
+          </div>
+        </div>
+      </section>
+     <section class="cards product">
+      <div class="container">
+          <div class="card">
+              <h3>Produto</h3>
+              <img src="./source/flor-tropical1.jpg" alt="Card Product Price Image">
+              <div class="card-content">
+                  <p>$88.99</p>
+              </div>
+              <button class="btn"><a href="#">Comprar</a></button>
+          </div>
+
+          <div class="card">
+            <h3>Produto</h3>
+            <img src="./source/flor-tropical1.jpg" alt="Card Product Price Image">
+            <div class="card-content">
+                <p>$88.99</p>
+            </div>
+            <button class="btn"><a href="#">Comprar</a></button>
+        </div>
+
+        <div class="card">
+          <h3>Produto</h3>
+          <img src="./source/flor-tropical1.jpg" alt="Card Product Price Image">
+          <div class="card-content">
+              <p>$88.99</p>
+          </div>
+          <button class="btn"><a href="#">Comprar</a></button>
+        </div>
+      </div>
+     </section>
+     <section class="form-contact">
+      <div class="container">
+        <h2>Contate-nos</h2>
+        <p>é simplesmente um texto fictício da indústria de impressão e composição tipográfica. Lorem Ipsum.</p>
+        <div class="content-form">
+          <form action="">
+            <input type="text" placeholder="Name" required>
+            <input type="email" name="" id="" placeholder="E-mail" required>
+            <input type="tel" name="" id="" placeholder="Whatsapp" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Details" required></textarea>
+            <button class="btn">Enviar</button>
+          </form>
+          <div class="box-image">
+            <img src="./source/flor-tropical1.jpg" alt="Image">
+          </div>
+        </div>
+       </div>
+     </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="./source/logo1.png" alt="" /></a>
+        </div>
+        <div class="info">
+          <p>copyright 2023</p>
+        </div>
+        <div>.</div>
+      </div>
+    </footer>
+    <script src="./scripts/carousel.js"></script>
+    <script src="./scripts/carouselCards.js"></script>
+  </body>
+</html>

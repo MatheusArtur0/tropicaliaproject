@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/barraNavegacao.css"> <!--Importando o CSS da barra de navegação-->
+    <link rel="stylesheet" href="styles/login.css"> <!--Importando o CSS do formulário de login-->
+    <title>Login</title>
+</head>
+<body>
+    
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <img id="logo" src="source/logo1.png" width="50" height="50" alt="Logo">
+                </div>
+
+                <div>
+                    <div class="nav-list">
+                        <ul>
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-icon"> <!--Criando o modelo responsivo do menu para a barra de navegação utilizando js-->
+                    <button onclick="menuShow()"><img class="icon" src="source/menu-atalho.svg"></button>
+                </div>
+            </nav>  
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                </ul>
+            </div>     
+        </header>
+        <main id="container"> <!--Iniciando o formulário de login-->
+            <form id="login_form">
+                <div id="form_header">
+                    <h1>Login</h1>
+                    <i id="mode_icon" class="fa-solid fa-moon"></i>
+                </div>
+
+                <div id="social_media">
+                    <a href="#">
+                        <img src="source/facebook.png" alt="Facebook Logo">
+                    </a>
+                    <a href="#">
+                        <img src="source/google.png" alt="Google Logo">
+                    </a>
+                </div>
+
+                <div id="inputs">
+                    <div class="input-box">
+                        <label for="name">
+                            Nome
+                            <div class="input-field">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="name" name="name" id="name">
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">
+                            E-mail
+                            <div class="input-field">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">
+                            Senha
+                            <div class="input-field">
+                                <i class="fa-solid fa-key"></i>
+                                <input type="password" name="password" id="password">
+                            </div>
+                        </label>
+
+                        <div id="forgot_password">
+                            <a href="#">
+                                Esqueceu sua senha?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" id="login_button">
+                    Login
+                </button>
+            </form>
+        </main>
+    <script src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/login.js"></script>
+</body>
+</html>        
