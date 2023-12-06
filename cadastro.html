@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/cadastro.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="accessibility-bar">
+                <div class="increase-decrease-letter">
+                    <button class="btn-increase">A +</button>
+                    <button class="btn-decrease">A -</button>
+                </div>
+                <div class="contrast-modeblack">
+                    <button class="btn-contrast">
+                        <img src="./source/brightness.png" alt="Button Contrast" srcset="" />
+                    </button>
+                    <button class="btn-modeblack">
+                        <img src="./source/modeblack.png" alt="Button Black/White mode" />
+                    </button>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="logo">
+                    <a href="index.html"><img src="./source/logo1.png" alt="" /></a>
+                </div>
+                <button class="btn-view-form" id="btn-view-form" onclick="">+</button>
+            </div>
+            
+        </div>        
+    </header>
+    <main>
+        <div class="box-form">
+            <form action="">
+                <input type="text" id="name" placeholder="Product Name" required>
+                <input type="text" id="details" placeholder="Product Details" required>
+                <input type="text" id="price" placeholder="Product Price" required>
+                <button id="btn-create">create</button>
+                <span class="alert-error" id="alert-error"></span>
+            </form>
+        </div>
+        <div class="list-product">
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="./source/logo1.png" alt="" /></a>
+            </div>
+            <div class="info">
+                <p>copyright 2023</p>
+            </div>
+            <div>.</div>
+        </div>
+    </footer>
+    <script src="./scripts/cadastro.js"></script>
+</body>
+
+</html>

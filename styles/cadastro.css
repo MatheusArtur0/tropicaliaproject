@@ -1,0 +1,63 @@
+:root {
+    --arrow-color: black;
+    --main-color: #3a4d39;
+    --secundary-color: #ffda08;
+    --main-font-color: white;
+    --secundary-font-size: 15px;
+  }
+
+.btn-view-form{
+    padding: 10px 20px;
+    border-radius: 100%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+main {
+}
+
+main form{
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background-color: var(--main-color);
+    padding: 50px 40px;
+    margin: 10px auto;
+}
+
+main form input{
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    display: flex;
+    padding: 8px;
+}
+
+main form button, .btn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alert-error {
+    color: red;
+}
+
+.invisible{
+    display: none;
+    transition: 1s;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    margin: 10px 0;
+    padding: 20px;
+    color: white;
+    flex-wrap: wrap;
+}
