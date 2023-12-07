@@ -126,6 +126,14 @@
     outline: none;
 }
 
+.container {
+    display: flex;
+}
+
+#forgot_password,
+#Register {
+    margin-right: 10px; /* Adapte o valor conforme necessário para dar espaço entre os elementos */
+}
 #forgot_password a {
     text-decoration: none;
     font-size: 12px;
@@ -136,6 +144,15 @@
     color: #8C8C8C;
 }
 
+#Register a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #000000;
+}
+
+#Register a:hover {
+    color: #8C8C8C;
+}
 #login_button {
     border: none;
     background: var(--color-gradient);
